@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Red Hat Display", sans-serif;
 }
 
 #summary-card {
@@ -20,16 +21,35 @@ body {
     height: auto;
     border-radius: 25px;
     background-color: hsl(225, 100%, 98%);
+    overflow: hidden;
 }
 
 #summary-card > * {
     margin: 15px 0;
 }
 
+#summary-card > a {
+    display: block;
+}
+
+#card-hero {
+    margin-top: 0px;
+}
+
+#summary-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#summary-text > * {
+    margin-bottom: 15px;
+}
+
 .attribution {
     text-align: center;
     position: absolute;
-    bottom: 30px;
-    width: 281px;
-    left: calc(50% - (281px / 2))
+    bottom: 15px;
+    width: 315px;
+    left: calc(50% - (315px / 2))
 }
