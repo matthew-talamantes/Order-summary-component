@@ -20,7 +20,7 @@ body {
     width: 350px;
     height: auto;
     border-radius: 25px;
-    background-color: hsl(225, 100%, 98%);
+    background-color: white;
     overflow: hidden;
     box-shadow: 5px 3px 15px rgba(0, 0, 0, 0.25);
 }
@@ -38,8 +38,8 @@ body {
 }
 
 #summary-text {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,6 +60,75 @@ body {
     text-align: center;
     font-size: 1em;
     font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+#order-summary {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#order-summary a {
+    font-weight: 500;
+    font-size: 1em;
+    color: hsl(245, 75%, 52%);
+}
+
+#order-summary a:visited {
+    color: hsl(245, 75%, 52%);
+}
+
+#selected-plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#selected-plan img {
+    flex-shrink: 0;
+}
+
+#selected-plan-text {
+
+    text-align: left;
+    margin-left: 15px;
+}
+
+#selected-plan-text h2 {
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+#selected-plan-text p {
+    margin: 0;
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+#payment-button {
+    width: 95%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color:white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 30px hsla(245, 75%, 52%, 0.4);
+}
+
+.cancel-btn {
+    color:hsl(224, 23%, 55%);
 }
 
 .attribution {
